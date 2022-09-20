@@ -84,6 +84,7 @@ img,picture {
 }
 
 .faq-q.active {
+    padding-bottom: .6rem;
     font-weight: 700;
 }
 
@@ -99,12 +100,14 @@ img,picture {
 }
 
 .faq-a {
-    display: none;
-    padding-top: .6rem;
+    max-height: 0;
+    overflow: hidden;
+    
 }
 
 .faq-a.active {
-    display: block;
+    transition: .5s ease-in;
+    max-height: 15rem;
 }
 
 @media (min-width:60rem) {
