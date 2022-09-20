@@ -11,29 +11,20 @@ for (let i = 0; i < faqAcc.length; i++) {
 
     faqAcc[i].addEventListener("click", () => {
 
-        if (faqQ[i].classList.contains('active')) { 
+        if (faqAcc[i].classList.contains('active')) { 
             closeAcc();
         }
         else { 
             closeAcc(); 
-            faqQ[i].classList.toggle("active");
-            faqArrow[i].classList.toggle("active");
-            faqAns[i].classList.toggle("active");
+            faqAcc[i].classList.toggle("active");
+
         }  
         
     });
 }
 
 function closeAcc() {
-    faqQ.forEach(item => {
-        item.classList.remove("active");
-    });
-
-    faqArrow.forEach(item => {
-        item.classList.remove("active");
-    });
-
-    faqAns.forEach(item => {
+    faqAcc.forEach(item => {
         item.classList.remove("active");
     });
 }

@@ -83,7 +83,7 @@ img,picture {
     color: hsl(14, 88%, 65%);
 }
 
-.faq-q.active {
+.faq-acc.active > .faq-q {
     padding-bottom: .6rem;
     font-weight: 700;
 }
@@ -94,7 +94,7 @@ img,picture {
     transition: none;
 }
 
-.arrow.active {
+.faq-acc.active > .arrow {
     transform: rotate(180deg);
     transition: .5s ease;
 }
@@ -105,8 +105,8 @@ img,picture {
     
 }
 
-.faq-a.active {
-    transition: .5s ease-in;
+.faq-acc.active + .faq-a {
+    transition: .5s ease;
     max-height: 15rem;
 }
 
