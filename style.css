@@ -76,7 +76,7 @@ img,picture {
     color: hsl(238, 29%, 16%);
     font-size: 0.875rem;
     font-weight: 400;
-    transition: .3s ease-in-out;
+    transition: .3s ease;
 }
 
 .faq-q:hover {
@@ -90,10 +90,12 @@ img,picture {
 .arrow {
     margin-top: .4rem;
     align-self: flex-start;
+    transition: none;
 }
 
 .arrow.active {
-    transform: scaleY(-1);
+    transform: rotate(180deg);
+    transition: .5s ease;
 }
 
 .faq-a {
@@ -124,8 +126,25 @@ img,picture {
         top: calc(50% - 2.6rem);
         left: -10%;
         z-index: 1;
-        transition: .5s ease-in-out;
+        animation-name: example2;
+        animation-duration: 2s;
     }
+
+    .boxIcon.active {
+        left: -14%;
+        animation-name: example;
+        animation-duration: 2s;
+    }
+
+    @keyframes example {
+        0% {left: -10%;}
+        100% {left: -14%;}
+      }
+
+      @keyframes example2 {
+        0% {left: -14%;}
+        100% {left: -10%;}
+      }
 
     .img-box {
         width: 48%;
