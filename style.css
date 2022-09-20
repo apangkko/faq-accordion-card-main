@@ -31,7 +31,7 @@ img,picture {
     background-color: #fff;
     padding: 0 1.5rem 3rem;
     border-radius: 20px;
-    box-shadow: 0 20px 20px #5741b8;
+    box-shadow: 0 30px 20px -10px #5741b8;
 }
 
 .boxIcon {
@@ -126,25 +126,8 @@ img,picture {
         top: calc(50% - 2.6rem);
         left: -10%;
         z-index: 1;
-        animation-name: example2;
-        animation-duration: 2s;
+        transition: .8s ease-in-out;
     }
-
-    .boxIcon.active {
-        left: -14%;
-        animation-name: example;
-        animation-duration: 2s;
-    }
-
-    @keyframes example {
-        0% {left: -10%;}
-        100% {left: -14%;}
-      }
-
-      @keyframes example2 {
-        0% {left: -14%;}
-        100% {left: -10%;}
-      }
 
     .img-box {
         width: 48%;
@@ -165,7 +148,7 @@ img,picture {
     }
 
     .faq-box {
-        padding: 4rem 5rem;
+        padding: 5rem;
         width: 62%;
     }
 
